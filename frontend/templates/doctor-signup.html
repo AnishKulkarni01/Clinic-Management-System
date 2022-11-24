@@ -1,0 +1,53 @@
+{% extends 'base.html' %} {% block csslinking %}
+<link rel="stylesheet" href="{{ url_for('static',filename='./css/doctor-signup.css')}}" />
+{% endblock %} {% block content %}
+<div class="signupdoctor">
+    <div class="signupHeading">
+        <img src={{ url_for('static',filename='./images/swecha_white.png')}} alt="logo">
+        <h1>Doctor Signup</h1>
+    </div>
+    <div class="DoctorSignupContent">
+        <div class="signupContainer">
+            <form method="post">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" placeholder="Enter name" required />
+                </div>
+                <div class="form-group">
+                    <label for="type">Type</label>
+                    <input type="text" name="type" placeholder="Enter Doctor type" required />
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" placeholder="Enter password" required />
+                </div>
+                <div class="form-groupTime">
+                    <label for="Available">Available</label>
+                    <div class="form-column">
+                        <div class="form-group">
+                            <label for="fromtime">from</label>
+                            <input type="time" name="fromtime" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="totime">to</label>
+                            <input type="time" name="totime" required />
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="clinic_id">Clinic</label>
+                    <select name="clinic_id">
+                        <option value="1">clinic1</option>
+                        <option value="2">clinic2</option>
+                        <option value="3">clinic3</option>
+                        <option value="4">clinic4</option>
+                        <option value="5">clinic5</option>
+                    </select>
+                </div>
+                <input type="submit" value="Signup →" class="signup-btn-doc" />
+            </form>
+        </div>
+        <div class="DoctorPoster"><img src={{ url_for('static',filename='./images/polar-health-care 1.png')}} alt="poster"></div>
+    </div>
+</div>
+{% endblock %}

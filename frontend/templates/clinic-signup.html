@@ -1,0 +1,42 @@
+{% extends 'base.html' %} {% block csslinking %}
+<link rel="stylesheet" href="{{ url_for('static',filename='./css/clinic-signup.css')}}" />
+{% endblock %} {% block content %}
+<div class="clinic-signup">
+    <div class="clinic-signup-top">
+        <div class="clinic-top-img"><img src={{ url_for('static',filename='./images/swecha_white.png')}} alt="logo" /></div>
+        <div class="clinic-top-txt"><h1>Clinic Signup</h1></div>
+    </div>
+    <div class="clinic-signup-content">
+        <div class="clinic-signup-body">
+            <form method="post">
+                <div class="clinic-fr">
+                    <label for="name">Clinic Name</label>
+                    <input type="text" name="name" placeholder="Enter name" required />
+                </div>
+                <div class="clinic-fr">
+                    <label for="email">Email</label>
+                    <input type="text" name="email" placeholder="Enter email" required />
+                </div>
+                <div class="clinic-fr">
+                    <label for="type">Password</label>
+                    <input type="password" name="password" placeholder="Enter password" required />
+                </div>
+                <div class="clinic-fr">
+                    <label for="name">Contact Name</label>
+                    <input type="text" name="contact_name" placeholder="Enter contact name" required />
+                </div>
+                <div class="clinic-fr">
+                    <label for="contact">Contact Number</label>
+                    <input type="text" name="contact_number" placeholder="Enter contact number" required />
+                </div>
+                <div class="clinic-fr">
+                    <label for="address">Lat/Lng</label>
+                    <textarea class="addressbox" name="lat_lng" placeholder="Enter Lat_Lng" required></textarea>
+                </div>
+                <input type="submit" value="Signup →" class="clinic-signup-btn" />
+            </form>
+        </div>
+        <div class="body-img"><img src={{ url_for('static',filename='./images/polar-health-care 1.png')}} alt="poster" /></div>
+    </div>
+</div>
+{% endblock %}

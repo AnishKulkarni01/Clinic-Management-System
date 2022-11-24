@@ -1,0 +1,94 @@
+/* landing page  */
+.landingPage .top {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-shrink: 0;
+
+}
+
+.landingPage a {
+    text-decoration: none;
+
+}
+
+.landingPage .container1 {
+
+    margin-top: 2rem;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.landingPage .container2 {
+
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.landingPage .item {
+    margin: 30px;
+}
+
+.landingPage .logo {
+    width: 12%;
+    height: 12%;
+    ;
+}
+
+.landingPage .imgb {
+    width: 450px;
+    height: 450px;
+}
+
+.landingPage .first {
+    border-color: #F14547;
+    color: #fff;
+    box-shadow: 0 0 40px 40px #F14547 inset, 0 0 0 0 #F14547;
+}
+
+.landingPage .second {
+    border-color: #6846EB;
+    color: #fff;
+    box-shadow: 0 0 40px 40px #6846EB inset, 0 0 0 0 #6846EB;
+}
+
+.landingPage .third {
+    border-color: #2BEBC8;
+    color: #fff;
+    box-shadow: 0 0 40px 40px #2BEBC8 inset, 0 0 0 0 #2BEBC8;
+}
+
+.landingPage .btn {
+
+    appearance: none;
+    background-color: transparent;
+    border: 2px;
+    border-radius: 0.6em;
+
+    cursor: pointer;
+    display: flex;
+    align-self: center;
+    font-size: 1.1rem;
+    font-weight: 100;
+    line-height: 1;
+
+    width: 16rem;
+    padding: 1.2rem 2rem;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 700;
+
+
+}
+.landingPage .arr {
+    height: 20px;
+    margin-right: 25px;
+    ;
+}
+
+/* landing page end  */

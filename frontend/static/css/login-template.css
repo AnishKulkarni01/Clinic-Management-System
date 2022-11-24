@@ -1,0 +1,122 @@
+/* login-template  */
+.login-page {
+    background-color: #1E1F23;
+    height: 100vh;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-page .swecha-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-page .login-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #0d0c0f81;
+    border-radius: 20px;
+    color: #FFFFFF;
+    padding: 10px;
+    margin-top: 1rem;
+    width: 680px;
+    padding-top: 25px;
+    padding-bottom: 40px;
+}
+
+.login-page .login-name {
+    font-size: 35px;
+    margin-bottom: 25px;
+}
+
+.login-page .username-field {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 30px;
+}
+
+.login-page .username-field label {
+    font-size: 22px;
+}
+
+.login-page .username-field input {
+    width: 300px;
+    height: 2.5rem;
+    border-radius: 10px;
+    background: #FFFFFF url('../images/person_FILL0_wght400_GRAD0_opsz48.png') no-repeat left;
+    padding-left: 32px;
+    background-size: 32px;
+
+}
+
+.login-page .password-field {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 30px;
+}
+
+.login-page .password-field label {
+    font-size: 22px;
+}
+
+.login-page .password-field input {
+    width: 300px;
+    height: 2.5rem;
+    border-radius: 10px;
+    background: #FFFFFF url('../images/lock_FILL1_wght400_GRAD0_opsz48.png') no-repeat left;
+    padding-left: 32px;
+    background-size: 32px;
+}
+
+.login-page .register {
+    background-color: #00000000;
+    color: #F14547;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.login-page .regClinic {
+    color: #F14547;
+}
+
+.login-page .regPatient {
+    color: #6846EB;
+}
+
+.login-page .regDoctor {
+    color: #2BEBC8;
+}
+
+.login-page .login-button {
+    width: 200px;
+    color: #FFFFFF;
+    font-size: 22px;
+    height: 50px;
+    border-radius: 10px;
+    background: url('../images/login_FILL1_wght400_GRAD0_opsz48.png') no-repeat left;
+    padding-left: 32px;
+    background-size: 32px;
+    background-color: #F14547;
+}
+
+.login-page .logbtnClinic {
+    background-color: #F14547;
+}
+
+.login-page .logbtnPatient {
+    background-color: #6846EB;
+}
+
+.login-page .logbtnDoctor {
+    background-color: #2BEBC8;
+}
+
+/* login-template end  */

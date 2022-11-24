@@ -1,0 +1,24 @@
+{% extends 'base.html' %} {% block csslinking %}
+<link rel="stylesheet" href="{{ url_for('static',filename='./css/landing-page.css')}}" />
+{% endblock %} {% block content %}
+<div class="landingPage">
+    <div class="top">
+        <img class="logo" src="{{ url_for('static',filename='./images/swecha_white.png')}}" alt="alt-text" />
+    </div>
+
+    <div class="container1">
+        <div class="landing-img"><img class="imgb" src={{ url_for('static',filename='./images/polar-health-care 1.png')}} alt="alt-text" /></div>
+        <div class="landing-buttons container2">
+            <a class="item" href={{url_for('loginPage',role='Clinic')}}>
+                <button class="first btn"><img class="arr" src={{ url_for('static',filename='./images/login_FILL1_wght400_GRAD0_opsz48.png')}} alt="" /> Login as Clinic</button>
+            </a>
+            <a class="item" href={{url_for('loginPage',role='Patient')}}>
+                <button class="second btn"><img class="arr" src={{ url_for('static',filename='./images/login_FILL1_wght400_GRAD0_opsz48.png')}} alt="" />Login as Patient</button>
+            </a>
+            <a class="item" href={{url_for('loginPage',role='Doctor')}}>
+                <button class="third btn"><img class="arr" src={{ url_for('static',filename='./images/login_FILL1_wght400_GRAD0_opsz48.png')}} alt="" />Login as Doctor</button>
+            </a>
+        </div>
+    </div>
+</div>
+{% endblock %}

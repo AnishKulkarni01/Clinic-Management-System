@@ -1,0 +1,38 @@
+{% extends 'base.html' %} {% block csslinking %}
+<link rel="stylesheet" href="{{ url_for('static',filename='./css/patient-signup.css')}}" />
+{% endblock %} {% block content %}
+<div class="patient-signup">
+    <div class="patient-signup-top">
+        <div class="patient-top-img"><img src={{ url_for('static',filename='./images/swecha_white.png')}} alt="logo" /></div>
+        <div class="patient-top-txt"><h1>Patient Signup</h1></div>
+    </div>
+    <div class="patient-signup-content">
+        <div class="patient-signup-body">
+            <form method="post">
+                <div class="patient-fr">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" placeholder="Enter name" required />
+                </div>
+                <div class="patient-fr">
+                    <label for="email">Email</label>
+                    <input type="text" name="email" placeholder="Enter email" required />
+                </div>
+                <div class="patient-fr">
+                    <label for="type">Password</label>
+                    <input type="password" name="password" placeholder="Enter password" required />
+                </div>
+                <div class="patient-fr">
+                    <label for="contact">Mobile Number</label>
+                    <input type="text" name="contact" placeholder="Enter contact number" required />
+                </div>
+                <div class="patient-fr">
+                    <label for="address">Address</label>
+                    <textarea class="addressbox" name="address" placeholder="Enter Address" required></textarea>
+                </div>
+                <input type="submit" value="Signup →" class="patient-signup-btn" />
+            </form>
+        </div>
+        <div class="body-img"><img src={{ url_for('static',filename='./images/polar-health-care 1.png')}} alt="poster" /></div>
+    </div>
+</div>
+{% endblock %}

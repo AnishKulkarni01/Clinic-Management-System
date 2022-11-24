@@ -1,0 +1,28 @@
+{% extends 'base.html' %} {% block csslinking %}
+<link rel="stylesheet" href="{{ url_for('static',filename='./css/base-patient.css')}}" />
+{% block cssInside %}{% endblock %} {% endblock %} {% block content %}
+<div class="nav-patient">
+    <div class="logo"><img src={{ url_for('static',filename='./images/swecha_white.png')}} alt="logo"></div>
+    <div class="navlinks">
+        <a class="navlink">
+            <i class="fa-regular fa-calendar-check"></i>
+            &nbsp; Appointments
+        </a>
+        <a class="navlink">
+            <i class="fa-solid fa-file-invoice"></i>
+            &nbsp; Medical History
+        </a>
+        <a class="navlink">
+            <i class="fa-regular fa-credit-card"></i>
+            &nbsp; Payments
+        </a>
+    </div>
+    <div class="profilelink">
+        <a class="navlink">
+            <i class="fa-regular fa-user"></i>
+            &nbsp; Patient name &nbsp;
+            <i class="fa-solid fa-angle-down"></i>
+        </a>
+    </div>
+</div>
+{% block patientContent %} {% endblock %} {% endblock %}

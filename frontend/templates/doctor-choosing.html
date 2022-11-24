@@ -1,0 +1,36 @@
+{% extends 'base-patient.html' %} {% block cssInside %}
+<link rel="stylesheet" href="{{ url_for('static',filename='./css/doctor-choosing.css')}}" />
+{% endblock %} {% block patientContent %}
+<div class="choose-doctor">
+    <table>
+        <caption>
+            Choose Doctor
+        </caption>
+        <thead>
+            <tr>
+                <th scope="col">Doctor Name</th>
+                <th scope="col">Doctor Speciality</th>
+                <th scope="col">Available Timings</th>
+                <th scope="col">Slots</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for doctor in data %}
+            <tr>
+                <td>{{doctor['name']}}</td>
+                <td>{{doctor['type']}}</td>
+                <td>{{doctor['available']}}</td>
+                <td>
+                    <button type="button" class="button">
+                        <span class="button__text">Choose</span>
+                        <span class="button__icon">
+                            <i class="fa-solid fa-angle-right"></i>
+                        </span>
+                    </button>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}

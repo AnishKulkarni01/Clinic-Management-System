@@ -1,0 +1,129 @@
+/* doctor signup  */
+.signupdoctor {
+    width: 100vw;
+    min-height: 100vh;
+    padding: 1rem 2rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.signupHeading {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 1rem;
+}
+
+.signupHeading img {
+    height: 3rem;
+    margin: 0 1rem;
+}
+
+.signupHeading h1 {
+    font-size: 2rem;
+    font-weight: 300;
+    color: #fff;
+}
+
+.DoctorSignupContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.DoctorPoster {
+    width: 40vw;
+}
+
+.DoctorPoster img {
+    width: 100%;
+}
+
+.signupContainer {
+    /* width: calc(100vw - 4rem); */
+    width: 50vw;
+    min-height: 80vh;
+    padding: 2rem;
+    background-color: #0D0C0F;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border-radius: 10px;
+}
+
+.signupContainer form .form-group {
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.signupContainer form .form-group label {
+    font-size: 1.5rem;
+    font-weight: 300;
+    width: 12rem;
+    margin-right: 1rem;
+}
+
+.signupContainer form .form-group input {
+    width: 100%;
+    height: 2.2rem;
+    border-radius: 4px;
+    background: #EEEEEC;
+    border: 1px solid #fff;
+    padding: 0 1rem;
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: black;
+}
+
+.signupContainer form .form-group select {
+    width: 100%;
+    height: 2.2rem;
+    border-radius: 3px;
+    background: #EEEEEC;
+    border: 1px solid #fff;
+    padding: 0 1rem;
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: black;
+}
+
+.signupContainer form .form-groupTime {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.signupContainer form .form-groupTime label {
+    font-size: 1.5rem;
+    font-weight: 300;
+    width: 12rem;
+    margin-right: 1rem;
+}
+
+.signupContainer form .form-groupTime .form-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.signup-btn-doc {
+    width: 10rem;
+    height: 3rem;
+    border-radius: 10px;
+    background: #6846EB;
+    color: white;
+    font-size: 1.2rem;
+}
+
+/* doctor signup end  */

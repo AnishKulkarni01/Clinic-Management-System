@@ -1,0 +1,25 @@
+{% extends 'base.html' %} {% block csslinking %}
+<link rel="stylesheet" href="{{ url_for('static',filename='./css/login-template.css')}}" />
+{% endblock %} {% block content %}
+<div class="login-page">
+    <span class="swecha-logo"><img src={{ url_for('static',filename='./images/swecha_white.png')}} width="196" height="78" /></span>
+
+    <form action="#" method="post" class="login-form">
+        <div class="login-name">{{role}} Login</div>
+
+        <div class="username-field">
+            <label>Username/E-mail</label>
+            <input type="text" name="username" required />
+        </div>
+
+        <div class="password-field">
+            <label>Password</label>
+            <input type="password" name="password" required />
+        </div>
+
+        <a class='register reg{{role}}' href={{url_for('signup'+role)}}><u>Don't Have an account? Register here</u></a>
+
+        <button class="login-button logbtn{{role}}">Login</button>
+    </form>
+</div>
+{% endblock %}
